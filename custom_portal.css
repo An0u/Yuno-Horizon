@@ -345,7 +345,7 @@ body.logged, .logged .content {
     display: block;
     position: relative;
     /* float: left; */
-    content: url("pictures/trashFace.gif");
+    content: url("pictures/avatar.gif");
     width: 142px;
 	height: 142px;
 	/* border-radius: 50%; */
