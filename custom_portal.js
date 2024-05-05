@@ -34,7 +34,7 @@ async function addAppsLogo() {
 
         const img = document.createElement('img')
         img.className = 'appLogo'
-        imgUrl = `${app.baseURI.replace('#', '')}assets/themes/Nature-Mount/pictures/${name}.png`
+        imgUrl = `https://${document.location.hostname}/yunohost/sso/assets/themes/Yuno-Horizon/pictures/${name}.png`
         
         // Check if the URL of the logo exist.
         await fetch(imgUrl)
