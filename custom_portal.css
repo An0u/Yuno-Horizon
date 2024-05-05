@@ -21,6 +21,18 @@
 	src: url("typo/FontAwesome.ttf");
 }
 
+:root {
+	--dark-main-background: #1C1E26; /*  1C1E26  */
+	--dark-secondary-background: #2E303E;  /*  2E303E  */
+	--dark-main-foreground: var(--dark-main-foreground);
+
+	--dark-light-orange: #FAB795; /*  FAB795  */
+	--dark-orange: #F09383; /*  F09383  */
+	--dark-red: #E9436F; /*  E9436F  */
+	--dark-green: #27D796; /*  27D796  */
+	--dark-purple: #B877DB; /*  27D796  */
+}
+
 html {
 	min-height: 100vh;
 }
@@ -62,7 +74,7 @@ body {
 }
 
 .ynh-user-portal {
-	background-color: #1D1E26;
+	background-color: var(--dark-main-background);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position-x: center;
@@ -81,7 +93,7 @@ body {
 	background-repeat: no-repeat;
 	background-position-x: 50px;
 	background-position-y: 20px;
-	background-color: #2E303E;
+	background-color: var(--dark-secondary-background);
 	background-repeat: no-repeat;
 	margin: 0;
 	position: initial;
@@ -90,7 +102,7 @@ body {
 
 .edit {
 	padding: 10px;
-	border: solid 2px #F09383;
+	border: solid 2px var(--dark-orange);
 }
 .ynh-wrapper::after, .ynh-wrapper::before {
 	content: none;
@@ -111,7 +123,7 @@ body {
 }
 
 .messages.info {
-	background-color: #F09383;
+	background-color: var(--dark-orange);
 	padding: 5px 0 8px 0;
   	font-family: inherit;
 	color: #101c16;
@@ -119,18 +131,18 @@ body {
 }
 
 .messages.danger {
-	background: #E9436F;
+	background: var(--dark-red);
 	color: #101c16;
 	padding: 5px 0 8px 0;
   	font-family: inherit;
 	font-size: 1em;
 }
 .login {
-	background-color: #2E303E;
+	background-color: var(--dark-secondary-background);
 	height: 300px;
 	border-radius: 15px 15px 0 0;
 	box-shadow:  8px 8px 8px rgb(16, 28, 22);
-	border-bottom: 28px solid #E9436F;
+	border-bottom: 28px solid var(--dark-red);
 }
 
 .login-form {
@@ -144,13 +156,13 @@ body {
 	height: 52px;
 	margin: 8px 0;
 	/* padding: 0 0 0 60px; */
-	background-color: #E9436F;
-	color: #1C1E26;
+	background-color: var(--dark-red);
+	color: var(--dark-main-background);
 	text-align: center;
 }
 .login-form .btn:hover {
-	background: url("pictures/picto.png") no-repeat 0 52px #27D796;
-	color: #1C1E26;
+	background: url("pictures/picto.png") no-repeat 0 52px var(--dark-green);
+	color: var(--dark-main-background);
 }
 
 .login-form .form-group {
@@ -177,7 +189,7 @@ body {
 	padding: 0 5%;
 	border: 0;
 	font-family: 'NotoSansBold', serif;
-	background-color: #1C1E26;
+	background-color: var(--dark-main-background);
 	color: #c2a593;
 	position: relative;
 }
@@ -251,7 +263,7 @@ body.logged, .logged .content {
 	width: 100%;
 }
 .logged .user-menu li:hover{
-	background-color: #E9436F;
+	background-color: var(--dark-red);
 	color: #101c16;
 }
 .logged .user-menu a {
@@ -273,11 +285,7 @@ body.logged, .logged .content {
 	width: 275px;
 	background-image: none;
 	background-color: #232530;
-	/* margin-top: 5%;
-  	margin-left: 10vw; */
 	position: absolute;
-	
-	/* padding-top: 64px; */
 }
 		/* ------------------------
 				User
@@ -293,8 +301,8 @@ body.logged, .logged .content {
 	line-height: 2.6em;
 	margin: 0;
 	padding: 16px;
-	background-color: #2E303E;
-	color: #FAB795;
+	background-color: var(--dark-secondary-background);
+	color: var(--dark-light-orange);
 	text-align: center;
 }
 .user-container::before{
@@ -312,11 +320,12 @@ body.logged, .logged .content {
 	margin: 0 10%;
 	min-height: 82px;
 	font-size: 2.6em;
+	color: var(--dark-purple);
 }
 .user-container .user-username::after, .user-container-edit .user-username::after {
 	font-family: "Icon Awesome", serif;
 	content: "\f044";
-	color: #F09383;
+	color: var(--dark-orange);
 	font-size: 0.5em;
     width: 1em;
     height: 1em;
@@ -349,7 +358,7 @@ body.logged, .logged .content {
     width: 142px;
 	height: 142px;
 	/* border-radius: 50%; */
-	border: solid 2px #F09383;
+	border: solid 2px var(--dark-orange);
 	/* padding: 20px; */
 	size: 16px;
 }
@@ -382,7 +391,7 @@ body.logged, .logged .content {
 	color: #c2a593;
 }
 .icon-connexion::before {
-    color: #E9436F;
+    color: var(--dark-red);
 }
 .icon-connexion:hover {
     color: #101c16;
@@ -417,7 +426,7 @@ body.logged, .logged .content {
 	font-family: 'Trebuchet MS', serif;
 	font-size: .9em;
 	padding: 0 10px 0 10px;
-	color: #FAB795;
+	color: var(--dark-light-orange);
 	letter-spacing: -0.05em;
 	list-style-type: none;
 	text-decoration: none;
@@ -472,16 +481,16 @@ body.logged, .logged .content {
 }
 
 #apps ul li a {
-	background: #2E303E;
+	background: var(--dark-secondary-background);
 	border-radius: 5px 5px 0 0;
 	box-shadow: 6px 6px 6px #101c16;
-	color: #F09383;
+	color: var(--dark-orange);
 }
 
 .listing-apps a:hover {
 	top: 0;
 	left: 0;
-	border: 5px solid #FAB795;
+	border: 5px solid var(--dark-light-orange);
 }
 
 .listing-apps a::after, .listing-apps a::before, .listing-apps a:hover::after, .listing-apps a:hover::before {
@@ -493,7 +502,7 @@ body.logged, .logged .content {
 	box-shadow: none;
 	content: none;
 	overflow: hidden;
-	color: #E9436F;
+	color: var(--dark-red);
 
 }
 
@@ -505,7 +514,7 @@ body.logged, .logged .content {
 	margin: 0;
 	padding: 6px 5%;
 	text-align: center;
-	background: #4D4F69;
+	background: var(--dark-main-foreground);
 	line-height: 1.4em;
 	overflow: hidden;
 }
@@ -514,7 +523,7 @@ body.logged, .logged .content {
 	line-height: 0;
 	padding-top: 0;
 	padding-bottom: 0;
-	color: #E9436F;
+	color: var(--dark-red);
 	animation: nameopa 0.3s;
 }
 @keyframes nameopa {
@@ -539,12 +548,17 @@ body.logged, .logged .content {
 	display: inline;
 	position: relative;
 	top: -10px;
-	color: #E9436F;
-	animation: movetop 0.3s;
+	color: var(--dark-red);
+	/* animation: movetop 0.3s; */
 }
-@keyframes movetop {
-	from { top: 0; }
-	to { top:-10px; }  }
+.listing-apps a:hover > img {
+	width: 100%;
+	height: 100%;
+	display: inline;
+	position: relative;
+	top: 0px;
+	color: var(--dark-red);
+}
 /* ------------------------
 		Page Edit User
 ------------------------ */
@@ -570,8 +584,8 @@ body.logged, .logged .content {
 	content: none;
 }
 .form-text {
-	color: #F09383;
-	background: url("pictures/picto.png") no-repeat 0 -156px #1C1E26;
+	color: var(--dark-orange);
+	background: url("pictures/picto.png") no-repeat 0 -156px var(--dark-main-background);
 	padding-left: 60px;
 	font-family: 'NotoSansBold', serif;
 }
@@ -665,8 +679,8 @@ body.logged, .logged .content {
 		line-height: 2.6em;
 		margin: 0;
 		padding-left: 16px;
-		background-color: #2E303E;
-		color: #FAB795;
+		background-color: var(--dark-secondary-background);
+		color: var(--dark-light-orange);
 		text-align: center;
 	}
 
