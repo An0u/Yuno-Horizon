@@ -149,7 +149,7 @@ body {
 	text-align: center;
 }
 .login-form .btn:hover {
-	background: url("pictures/picto2.png") no-repeat 0 52px #27D796;
+	background: url("pictures/picto.png") no-repeat 0 52px #27D796;
 	color: #1C1E26;
 }
 
@@ -190,15 +190,15 @@ body {
 	width: 52px;
 }
 .icon-user {
-	background-image: url("pictures/picto2.png");
+	background-image: url("pictures/picto.png");
 }
 .icon-lock {
-	background-image: url("pictures/picto2.png");
+	background-image: url("pictures/picto.png");
 	background-position: 0 -52px;
 }
 input[type="submit"] {
 	border: 0;
-	background-image: url("pictures/picto2.png");
+	background-image: url("pictures/picto.png");
 	background-position: 0 -102px;
 	background-repeat: repeat-y;
 	background-color: #5d5446;
@@ -571,7 +571,7 @@ body.logged, .logged .content {
 }
 .form-text {
 	color: #F09383;
-	background: url("pictures/picto2.png") no-repeat 0 -156px #1C1E26;
+	background: url("pictures/picto.png") no-repeat 0 -156px #1C1E26;
 	padding-left: 60px;
 	font-family: 'NotoSansBold', serif;
 }
