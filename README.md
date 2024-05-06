@@ -33,7 +33,8 @@ https://yunohost.org/#/theming
 
 ![Yunohost-portal](https://raw.githubusercontent.com/niemes/yuno-Horizon/master/pictures/preview-portal.png)
 
-![Responsive](https://raw.githubusercontent.com/niemes/yuno-Horizon/master/pictures/preview-resp.gif)
+![Yunohost-mobile](https://raw.githubusercontent.com/niemes/yuno-Horizon/master/pictures/preview-mobile.png)
+![Yunohost-tablette](https://raw.githubusercontent.com/niemes/yuno-Horizon/master/pictures/preview-tablette.gpng)
 
 ## Credits: 
 
