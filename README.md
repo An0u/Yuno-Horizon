@@ -1,6 +1,10 @@
 # Nature Mount
-A simple theme for [Yunohost](https://yunohost.org), based on an illustration by Rob Green.
+A simple horizon Color theme for [Yunohost](https://yunohost.org), based on the excellent [Nature Mount Theme](https://github.com/yunohost-themes/Nature-Mount).
 
+- [x] Added Custom app icons support.
+- [x] Mobile / Tablette Column layout.
+- [x] Added color theme configuration css root variables. 
+- [x] Small sidebar
 
 ## How to install
 
@@ -8,6 +12,8 @@ You can follow the instructions explained here:
 https://yunohost.org/#/theming
 
 ## Screenshots
-![Yunohost-login](https://gitlab.com/stilobique/nature-mount/-/wikis/uploads/d9d7ea8ed18aaf654b5fd026f21b32ba/Yunohost-login.jpg)
+![Yunohost-login](https://raw.githubusercontent.com/niemes/yuno-Horizon/master/pictures/preview-login.png)
 
-![Yunohost-login](https://gitlab.com/stilobique/nature-mount/-/wikis/uploads/8e2f0a32d143b8a556d27fb1a2cfb533/Yunohost-Apps.jpg)
+![Yunohost-portal](https://raw.githubusercontent.com/niemes/yuno-Horizon/master/pictures/preview-portal.png)
+
+![Responsive](https://raw.githubusercontent.com/niemes/yuno-Horizon/master/pictures/preview-resp.gif)
