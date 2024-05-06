@@ -1,17 +1,17 @@
 {
-    "name": "nature-mount",
-    "id": "nature-mount",
+    "name": "yuno-horizon",
+    "id": "yuno-horizon",
     "packaging_format": 1,
     "description": {
         "en": "An illustrated theme.",
         "fr": "Un theme illustrer."
     },
     "version": "0.9.5",
-    "url": "https://gitlab.com/stilobique/nature-mount",
+    "url": "https://gitlab.com/niemes/yuno-horizon",
     "license": "AGPL-3.0",
     "maintainer": {
-        "name": "Vaillant Aurelien",
-        "email": "aurelienvlt@free.fr"
+        "name": "Niemes",
+        "email": "kevin@niemes.info"
     },
     "requirements": {
         "yunohost": ">= 3.7.0.12",
