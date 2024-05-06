@@ -27,7 +27,7 @@
 	/*  1C1E26  */
 	--dark-secondary-background: #2E303E;
 	/*  2E303E  */
-	--dark-main-foreground: var(--dark-main-foreground);
+	--dark-main-foreground: #4D4F69;
 
 	--dark-light-orange: #FAB795;
 	/*  FAB795  */
@@ -606,17 +606,42 @@ body.logged,
 	height: 100%;
 	display: inline;
 	position: relative;
-	top: -10px;
+	top: -20px;
+	font-size: 1.4em;
 	color: var(--dark-red);
 }
 
-.listing-apps a:hover>img {
-	width: 100%;
-	height: 100%;
+.listing-apps img{
+	width: 60%;
+	height: 60%;
 	display: inline;
 	position: relative;
-	top: 0px;
-	color: var(--dark-red);
+	top: 10px;
+	fill: var(--dark-red);
+}
+
+.listing-apps a:hover img{
+	width: 90%;
+	height: 90%;
+	display: inline;
+	position: relative;
+	top: 7px;
+	fill: var(--dark-red);
+	animation: logoBig 0.5s;
+}
+
+@keyframes logoBig {
+	from {
+		top: 0px;
+		width: 70%;
+		height: 70%;
+	}
+
+	to {
+		top: 7px;
+		width: 90%;
+		height: 90%;
+	}
 }
 
 /* ------------------------
