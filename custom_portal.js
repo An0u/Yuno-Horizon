@@ -10,8 +10,14 @@
 ===============================================================================
 */
 const config = {
+    baseAvatar: 'base.png',
+    avatars: { // if you want to specified a specific file for an user
+        yuno: 'yuno.gif'
+    },
     customIcons: true,
+    customAvatars: true,
     newTabLink: true,
+    themeBaseURI: `https://${document.location.hostname}/yunohost/sso/assets/themes/Yuno-Horizon/pictures`
 }
 
 async function addAppsLogo() {
@@ -34,7 +40,7 @@ async function addAppsLogo() {
         const svg = document.createElement('img')
         svg.className = 'appLogo'
 
-        const imgUrl = `https://${document.location.hostname}/yunohost/sso/assets/themes/Yuno-Horizon/pictures/apps/${name}.svg`
+        const imgUrl = `${config.themeBaseURI}/apps/${name}.svg`
         
         // Check if the URL of the logo exist.
         await fetch(imgUrl)
@@ -56,6 +62,40 @@ async function addAppsLogo() {
     }
 }
 
+async function useCustomAvatar() {
+    let currentUser = document.getElementsByClassName('user-username')[0];
+    let username = currentUser.innerText
+    
+    if(currentUser) {
+        let targetAvatar;
+
+        if (config.avatars[username]) targetAvatar = config.avatars[username]
+        else targetAvatar = `${username}.png`
+
+        let avatarUrl = `${config.themeBaseURI}/avatars/${targetAvatar}`
+        var style = document.createElement('style');
+
+        // Check if the URL of the avatar exist.
+        await fetch(avatarUrl)
+            .then(response => {
+                if (response.ok) {
+                    var cssRule = `.user-container .user-username:before { content: url('${avatarUrl}'); opacity: 1;}`;
+
+                    style.appendChild(document.createTextNode(cssRule));
+                    document.head.appendChild(style);
+                } else {
+                    var cssRule = `.user-container .user-username:before { 
+                        content: url('${config.themeBaseURI}/avatars/${config.baseAvatar}'); 
+                        opacity: 1;
+                    }`;
+
+                    style.appendChild(document.createTextNode(cssRule));
+                    document.head.appendChild(style);
+                }
+            })
+    }
+}
+
 init_portal_original = init_portal;
 init_portal = async function()
 {
@@ -63,6 +103,7 @@ init_portal = async function()
 
     window.openApp = (link) => window.open(link, "_blank");
     if (config.customIcons) await addAppsLogo()
+    if (config.customAvatars) await useCustomAvatar()
 }
 
 /*

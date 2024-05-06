@@ -398,11 +398,15 @@ body.logged,
 .user-container .user-username:before {
 	display: block;
 	position: relative;
-	content: url("pictures/avatar.gif");
+	content: url("pictures/avatars/base.png");
 	width: 142px;
 	height: 142px;
 	border: solid 2px var(--dark-orange);
+	border-radius: 100%;
+  	overflow: hidden;
 	size: 16px;
+	opacity: 0;
+	transition: all 1s ease-in-out; 
 }
 
 /* ------------------------
