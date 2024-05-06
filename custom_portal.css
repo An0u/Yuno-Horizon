@@ -24,21 +24,21 @@
 
 :root {
 	--dark-main-background: #1C1E26;
+	--dark-darkest-background: #16161C;
+	--dark-sidebar-background: #232530;
 	/*  1C1E26  */
 	--dark-secondary-background: #2E303E;
-	/*  2E303E  */
-	--dark-main-foreground: #4D4F69;
+	
+	--dark-main-foreground: #4D4F69;  /*  6C6F93  */
+	--dark-secondary-text: #1D8991;
+	--dark-form-text: #F9CBBE;
+	--dark-formtext-hover: #6C6F93;
 
 	--dark-light-orange: #FAB795;
-	/*  FAB795  */
 	--dark-orange: #F09383;
-	/*  F09383  */
 	--dark-red: #E9436F;
-	/*  E9436F  */
 	--dark-green: #27D796;
-	/*  27D796  */
 	--dark-purple: #B877DB;
-	/*  27D796  */
 }
 
 html {
@@ -126,7 +126,7 @@ body {
 	position: absolute;
 	margin-top: 300px;
 	max-width: none;
-	color: #c2a593;
+	color: var(--dark-form-text);
 
 	/* Typo Rules */
 	font-family: 'NotoSansBold', serif;
@@ -139,13 +139,13 @@ body {
 	background-color: var(--dark-orange);
 	padding: 5px 0 8px 0;
 	font-family: inherit;
-	color: #101c16;
+	color: var(--dark-darkest-background);
 	font-size: 1em;
 }
 
 .messages.danger {
 	background: var(--dark-red);
-	color: #101c16;
+	color: var(--dark-secondary-background);
 	padding: 5px 0 8px 0;
 	font-family: inherit;
 	font-size: 1em;
@@ -215,12 +215,12 @@ body {
 	border: 0;
 	font-family: 'NotoSansBold', serif;
 	background-color: var(--dark-main-background);
-	color: #c2a593;
+	color: var(--dark-form-text);
 	position: relative;
 }
 
 .login-form .form-text::placeholder {
-	color: #c2a593;
+	color: var(--dark-form-text);
 }
 
 .icon-user,
@@ -243,11 +243,11 @@ input[type="submit"] {
 	background-image: url("pictures/picto.png");
 	background-position: 0 -102px;
 	background-repeat: repeat-y;
-	background-color: #5d5446;
+	background-color: var(--dark-secondary-text);
 
 	/* Typo Setup */
 	font-family: 'NotoSansBold', serif;
-	color: #c2a593;
+	color: var(--dark-form-text);
 	text-align: left;
 }
 
@@ -293,18 +293,18 @@ body.logged,
 
 .logged .user-menu li:hover {
 	background-color: var(--dark-red);
-	color: #101c16;
+	color: var(--dark-darkest-background);
 }
 
 .logged .user-menu a {
 	margin: 0;
 	padding: 16px;
-	color: #c2a593;
+	color: var(--dark-form-text);
 }
 
 .user-menu a:hover,
 .user-menu a:focus {
-	color: #101c16;
+	color: var(--dark-darkest-background);
 }
 
 /* ------------------------
@@ -316,7 +316,7 @@ body.logged,
 	right: 70%;
 	width: 275px;
 	background-image: none;
-	background-color: #232530;
+	background-color: var(--dark-sidebar-background);
 	position: absolute;
 }
 
@@ -387,7 +387,7 @@ body.logged,
 }
 
 .user-container .user-mail {
-	color: #c2a593;
+	color: var(--dark-form-text);
 	margin: 0;
 }
 
@@ -419,7 +419,7 @@ body.logged,
 	right: 0;
 	text-align: right;
 	background-position: right;
-	color: #c2a593;
+	color: var(--dark-form-text);
 	font-variant: small-caps;
 	font-family: 'NotoSansBold', serif;
 
@@ -433,7 +433,7 @@ body.logged,
 				Logout Icon
 		------------------------ */
 .icon-connexion {
-	color: #c2a593;
+	color: var(--dark-form-text);
 }
 
 .icon-connexion::before {
@@ -441,7 +441,7 @@ body.logged,
 }
 
 .icon-connexion:hover {
-	color: #101c16;
+	color: var(--dark-darkest-background);
 }
 
 /* ------------------------
@@ -485,8 +485,8 @@ body.logged,
 }
 
 .logged .footer a:hover {
-	background-color: #c2a593;
-	color: #101c16;
+	background-color: var(--dark-form-text);
+	color: var(--dark-darkest-background);
 }
 
 .logged .footer a:first-child::before {
@@ -533,7 +533,7 @@ body.logged,
 #apps ul li a {
 	background: var(--dark-secondary-background);
 	border-radius: 5px 5px 0 0;
-	box-shadow: 6px 6px 6px #101c16;
+	box-shadow: 6px 6px 6px var(--dark-darkest-background);
 	color: var(--dark-orange);
 }
 
@@ -680,7 +680,7 @@ body.logged,
 }
 
 .form-text:hover {
-	background-color: #6C6F93;
+	background-color: var(--dark-formtext-hover);
 }
 
 .edit .large-btn,
