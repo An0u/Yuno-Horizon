@@ -29,12 +29,11 @@ You can follow the instructions explained here:
 https://yunohost.org/#/theming
 
 ## Screenshots
-![Yunohost-login](https://raw.githubusercontent.com/niemes/yuno-Horizon/master/pictures/preview-login.png)
 
-![Yunohost-portal](https://raw.githubusercontent.com/niemes/yuno-Horizon/master/pictures/preview-portal2.png)
-
-![Yunohost-mobile](https://raw.githubusercontent.com/niemes/yuno-Horizon/master/pictures/preview-mobile.png)
-![Yunohost-tablette](https://raw.githubusercontent.com/niemes/yuno-Horizon/master/pictures/preview-tablette.png)
+<img src="[https://github.com/favicon.ico](https://raw.githubusercontent.com/niemes/yuno-Horizon/master/pictures/preview-login.png)" height="100">
+<img src="[https://github.com/favicon.ico](https://raw.githubusercontent.com/niemes/yuno-Horizon/master/pictures/preview-portal2.png)" height="100">
+<img src="[https://github.com/favicon.ico](https://raw.githubusercontent.com/niemes/yuno-Horizon/master/pictures/preview-tablette.png)" height="100">
+<img src="[https://github.com/favicon.ico](https://raw.githubusercontent.com/niemes/yuno-Horizon/master/pictures/preview-mobile.png)" height="100">
 
 ## Credits: 
 
