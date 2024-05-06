@@ -32,19 +32,20 @@ async function addAppsLogo() {
             });
         }
 
-        const img = document.createElement('img')
-        img.className = 'appLogo'
-        imgUrl = `https://${document.location.hostname}/yunohost/sso/assets/themes/Yuno-Horizon/pictures/${name}.png`
+        const svg = document.createElement('img')
+        svg.className = 'appLogo'
+
+        imgUrl = `https://${document.location.hostname}/yunohost/sso/assets/themes/Yuno-Horizon/pictures/apps/${name}.svg`
         
         // Check if the URL of the logo exist.
         await fetch(imgUrl)
             .then(response => {
                 if (response.ok) {
-                    img.src = imgUrl;
+                    svg.src = imgUrl;
                     if (app.firstElementChild) {
-                        app.replaceChild(img, app.firstElementChild);
+                        app.replaceChild(svg, app.firstElementChild);
                     } else {
-                        app.appendChild(img);
+                        app.appendChild(svg);
                     }
                 } else {
                     console.warn(`Invalid URL: ${imgUrl}`);
