@@ -30,10 +30,12 @@ https://yunohost.org/#/theming
 
 ## Screenshots
 
-<img src="[https://github.com/favicon.ico](https://raw.githubusercontent.com/niemes/yuno-Horizon/master/pictures/preview-login.png)" height="100">
-<img src="[https://github.com/favicon.ico](https://raw.githubusercontent.com/niemes/yuno-Horizon/master/pictures/preview-portal2.png)" height="100">
-<img src="[https://github.com/favicon.ico](https://raw.githubusercontent.com/niemes/yuno-Horizon/master/pictures/preview-tablette.png)" height="100">
-<img src="[https://github.com/favicon.ico](https://raw.githubusercontent.com/niemes/yuno-Horizon/master/pictures/preview-mobile.png)" height="100">
+![Yunohost-login](https://raw.githubusercontent.com/niemes/yuno-Horizon/master/pictures/preview-login.png)
+
+![Yunohost-portal](https://raw.githubusercontent.com/niemes/yuno-Horizon/master/pictures/preview-portal2.png)
+
+![Yunohost-resp](https://raw.githubusercontent.com/niemes/yuno-Horizon/master/pictures/preview-resp.png)
+
 
 ## Credits: 
 
