@@ -383,7 +383,7 @@ body.logged,
 .user-container .user-fullname {
 	display: block;
 	text-align: left;
-	padding: 0 10%;
+	padding: 5px;
 }
 
 .user-container .user-mail {
@@ -407,6 +407,7 @@ body.logged,
 	size: 16px;
 	opacity: 0;
 	transition: all 1s ease-in-out; 
+	margin-bottom: 10px;
 }
 
 /* ------------------------
@@ -453,7 +454,7 @@ body.logged,
 		------------------------ */
 .logged .footer {
 	position: absolute;
-	top: 385px;
+	top: 400px;
 	right: 70%;
 	margin-top: 0%;
 	width: 275px;
