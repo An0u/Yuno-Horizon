@@ -1,4 +1,4 @@
-# Nature Mount
+# Yuno Horizon
 A simple horizon Color theme for [Yunohost](https://yunohost.org), based on the excellent [Nature Mount Theme](https://github.com/yunohost-themes/Nature-Mount).
 
 - [x] Added Custom app icons support.
