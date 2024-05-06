@@ -2,6 +2,7 @@
 A simple horizon Color theme for [Yunohost](https://yunohost.org), based on the excellent [Nature Mount Theme](https://github.com/yunohost-themes/Nature-Mount).
 
 - [x] Added Custom app icons support ([custom_portal.js](https://github.com/niemes/yuno-Horizon/blob/master/custom_portal.js)).
+- [x] Open link in new tabs by default.
 - [x] Mobile / Tablette Column layout.
 - [x] Added color theme configuration css root variables.
 - [x] Small sidebar
