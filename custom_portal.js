@@ -26,8 +26,7 @@ async function addAppsLogo() {
             app.href = "";
 
             app.addEventListener("click", (event) => {
-                let link = event.currentTarget.dataset.link;
-                console.log(link);
+                const link = event.currentTarget.dataset.link;
                 if (link) window.openApp(link)
             });
         }
@@ -35,7 +34,7 @@ async function addAppsLogo() {
         const svg = document.createElement('img')
         svg.className = 'appLogo'
 
-        imgUrl = `https://${document.location.hostname}/yunohost/sso/assets/themes/Yuno-Horizon/pictures/apps/${name}.svg`
+        const imgUrl = `https://${document.location.hostname}/yunohost/sso/assets/themes/Yuno-Horizon/pictures/apps/${name}.svg`
         
         // Check if the URL of the logo exist.
         await fetch(imgUrl)
