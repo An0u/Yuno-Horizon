@@ -7,6 +7,7 @@ A simple horizon Color theme for [Yunohost](https://yunohost.org), based on the 
 - [x] Mobile / Tablette Column layout.
 - [x] Added color theme configuration css root variables.
 - [x] Small sidebar
+- [x] Add Terms of Service Modal Feature.
 
 ## Info :
 
@@ -22,6 +23,26 @@ Since Avatars are'nt supported by the yunohost portal but quite useful and nice 
 - to deactivate custom icons put customIcons: false in the config object of custom_portal.js 
 - Add the app icon in the /pictures/apps folder.
 - Icon must be an .svg file.
+
+### Terms Of Service Modal Feature : 
+
+Please Modify the config found in the custom_portal.js file.
+
+```
+    tosFeature: {
+        // ! Change to the url of the file !
+        markdownFile: `https://${document.location.hostname}/yunohost/sso/assets/themes/Yuno-Horizon/README.md`,
+        // ! Change to true if you want to redirect users rejecting the TOS.
+        redirectRejected: false,
+        rejectURL: "about:blank",
+        modal: {
+            title: 'TOS Yuno-Horizon Feature Title',
+            bottomMessage: "Modify this texte in your config file."
+        },
+    }
+```
+
+![Yunohost-tos](https://raw.githubusercontent.com/niemes/yuno-Horizon/master/pictures/preview-tos.png)
 
 ## How to install
 
