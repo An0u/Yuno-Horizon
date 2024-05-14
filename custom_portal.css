@@ -389,10 +389,10 @@ body.logged,
 	font-family: "Icon Awesome", serif;
 	content: "\f044";
 	color: var(--dark-orange);
-	font-size: 1.2em;
+	font-size: 0.9em;
 	width: 1em;
 	height: 1em;
-	margin-left: .5em;
+	margin: 0 .5em 0 .5em;
 	vertical-align: baseline;
 }
 
