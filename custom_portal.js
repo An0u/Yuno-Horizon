@@ -102,23 +102,25 @@ init_portal = async function()
     init_portal_original();
 
     // Don't wait if logged
-    if (document.body.className.indexOf("logged") == -1) document.body.style.opacity  = 1.0;
+    if (document.body.className.indexOf("logged") == -1) {
+        document.body.style.opacity  = 1.0;
+    } else { // handle custom UI only if logged 
+        window.openApp = (link) => window.open(link, "_blank");
+        if (config.customIcons) await addAppsLogo()
+        if (config.customAvatars) await useCustomAvatar()
 
-    window.openApp = (link) => window.open(link, "_blank");
-    if (config.customIcons) await addAppsLogo()
-    if (config.customAvatars) await useCustomAvatar()
+        // links menu
+        let footerNav = 'div.ynh-wrapper:nth-child(3) > nav:nth-child(1)'
+        var target = document.getElementsByClassName('user')[0];
+        target.id = "user"
 
-    // links 
-    let footerNav = 'div.ynh-wrapper:nth-child(3) > nav:nth-child(1)'
-    var target = document.getElementsByClassName('user')[0];
-    target.id = "user"
+        let mainNav = document.querySelector(footerNav)
+        let clonedMenu = mainNav.cloneNode(true);
+        clonedMenu.id = "mainmenu"
 
-    let mainNav = document.querySelector(footerNav)
-    let clonedMenu = mainNav.cloneNode(true);
-    clonedMenu.id = "mainmenu"
-
-    target.appendChild(clonedMenu);
-    mainNav.remove()
+        target.appendChild(clonedMenu);
+        mainNav.remove()
+    }
 
     document.body.style.opacity  = 1.0;
 }
