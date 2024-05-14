@@ -428,7 +428,6 @@ body.logged,
 	border: solid 2px var(--dark-orange);
 	border-radius: 100%;
   	overflow: hidden;
-	size: 16px;
 	opacity: 0;
 	transition: all 1s ease-in-out; 
 	margin-bottom: 10px;
@@ -733,7 +732,7 @@ input[value="OK"] {
 
 
 .appLogo {
-	display: ineline-block;
+	display: inline-block;
 	position: relative;
 	width: 70%;
 	height: 70%;
