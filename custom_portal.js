@@ -16,6 +16,7 @@ const config = {
     },
     customIcons: true,
     customAvatars: true,
+    noise: false,
     newTabLink: true,
     themeBaseURI: `https://${document.location.hostname}/yunohost/sso/assets/themes/Yuno-Horizon`,
     // ? Change to True if you want to use Term of Service Modal Feature
@@ -197,6 +198,12 @@ init_portal = async function()
 {
     init_portal_original();
     // Don't wait if logged
+    if (config.noise) {
+        let noise = document.createElement('div')
+        noise.className = "noise"
+        document.body.appendChild(noise);
+    }
+
     if (document.body.className.indexOf("logged") == -1) {
 
         if (config.tosModal) {
