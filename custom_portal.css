@@ -1082,7 +1082,7 @@ input[value="OK"] {
 	animation-direction: normal;
 	animation-fill-mode: none;
 	animation-play-state: running;
-	background: url('/pictures/noise.png');
+	background: url('pictures/noise.png');
 	background-position-x: 0%;
 	background-position-y: 0%;
 	background-position: 50%;
